@@ -1,7 +1,7 @@
 # opt_line_search
 Matlab implementation of line search methods for nonlinear optimization problem
 
-# methods
+# implemented methods
 1. steepest gradient descent <br>
 2. Newton's method <br>
 3. modified Newton's method <br>
@@ -9,8 +9,15 @@ Matlab implementation of line search methods for nonlinear optimization problem
 5. L-BFGS <br>
 
 # demo program
+demo_line_search.m
 
 # options
+- method: 1~5 (methods in the above)
+- func: test function
+- line search: 1 (backtracking), 2 (wolfe)
+- rho: parameter for backtracking line search
+- m: parameter for L-BFGS
+- tol: parameter for stopping criteria
 
-# contacts: seunghwanyoo2013@u.northwestern.edu
+
 
