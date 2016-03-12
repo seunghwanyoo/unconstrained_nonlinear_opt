@@ -31,5 +31,5 @@ This is Matlab implementation of unconstrained nonlinear optimization algorithms
 - c: param for CLS, regularizing matrix
 - vis: param for display, 0:nothing, 1:log, 2:log+figure
 
-
-
+# Contact
+Seunghwan Yoo (seunghwanyoo2013@u.northwestern.edu)
