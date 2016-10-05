@@ -1,5 +1,5 @@
 # Unconstrained nonlinear optimization
-This is Matlab implementation of unconstrained nonlinear optimization algorithms. The well known six algorithms are implemented. As an application, the constrained least squares (CLS) method for image deconvolution is used. The objective function for CLS is a quadratic function as described below (image deconvolution section). Since it's twice differentiable, we can use Newton's method as well as gradient descent method and quasi-Newton methods.
+This is Matlab implementation of unconstrained nonlinear optimization algorithms. The well known six algorithms are implemented. As an application, the regularized least squares (RLS) method for image deconvolution is used. The objective function for RLS is a quadratic function as described below (image deconvolution section). Since it's twice differentiable, we can use Newton's method as well as gradient descent method and quasi-Newton methods.
 
 # Implemented methods
 1. Steepest gradient descent <br>
@@ -11,7 +11,7 @@ This is Matlab implementation of unconstrained nonlinear optimization algorithms
 
 # Image deconvolution
 - Degradation model: y = Hx + n
-- Deconvolution method: Constrained Least Squares (CLS): <br />
+- Deconvolution method: Regularized Least Squares (RLS): <br />
       objective function: min_x 0.5||y-Hx||2 + 0.5*lambda*||Cx||2 <br />
 
 # Description of files
@@ -27,8 +27,8 @@ This is Matlab implementation of unconstrained nonlinear optimization algorithms
 - m: parameter for L-BFGS, number of storage
 - tol: parameter for stopping criteria
 - maxiter: max iteration
-- lambda: param for CLS, regularizing param
-- c: param for CLS, regularizing matrix
+- lambda: param for RLS, regularizing param
+- c: param for RLS, regularizing matrix
 - vis: param for display, 0:nothing, 1:log, 2:log+figure
 
 # Example result
